@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-//import { StaticImage } from 'gatsby-plugin-image';
 import styled from "styled-components";
 import { srConfig } from "../src/config";
 import { usePrefersReducedMotion } from "../src/hooks";
