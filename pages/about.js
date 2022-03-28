@@ -1,9 +1,9 @@
-import React, { useEffect, useRef } from "react";
-import styled from "styled-components";
-import { srConfig } from "../src/config";
-import { usePrefersReducedMotion } from "../src/hooks";
-import Image from "next/image";
-import me from "../public/me.jpg";
+import React, { useEffect, useRef } from 'react';
+import styled from 'styled-components';
+import { srConfig } from '../src/config';
+import { usePrefersReducedMotion } from '../src/hooks';
+import Image from 'next/image';
+import me from '../public/me.jpg';
 
 const StyledAboutSection = styled.section`
   max-width: 900px;
@@ -37,7 +37,7 @@ const StyledText = styled.div`
       font-size: var(--fz-xs);
 
       &:before {
-        content: "▹";
+        content: '▹';
         position: absolute;
         left: 0;
         color: var(--green);
@@ -90,7 +90,7 @@ const StyledPic = styled.div`
 
     &:before,
     &:after {
-      content: "";
+      content: '';
       display: block;
       position: absolute;
       width: 100%;
@@ -125,14 +125,14 @@ const About = () => {
     }
     async function animate() {
       if (revealContainer.current) {
-        const sr = (await import("scrollreveal")).default;
+        const sr = (await import('scrollreveal')).default;
         sr().reveal(revealContainer.current, srConfig());
       }
     }
     animate();
   }, []);
 
-  const skills = ["JavaScript (ES6+)", "Next", "React", "Webpack", "Node.js"];
+  const skills = ['JavaScript (ES6+)', 'Next', 'React', 'Webpack', 'Node.js'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -142,34 +142,17 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Anatoly and I enjoy creating things that live on
-              the internet. My interest in web development started back in 2012
-              when I decided to try editing custom Tumblr themes — turns out
-              hacking together a custom reblog button taught me a lot about HTML
-              &amp; CSS!
+              Hello! My name is Anatoly and I enjoy creating things that live on the internet. My
+              interest in web development started back in 2012 when I decided to try editing custom
+              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
+              about HTML &amp; CSS!
             </p>
 
             <p>
-              Fast-forward to today, and I’ve had the privilege of working at{" "}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{" "}
-              <a href="https://starry.com/">a start-up</a>,{" "}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{" "}
-              <a href="https://scout.camd.northeastern.edu/">
-                a student-led design studio
-              </a>
-              . My main focus these days is building accessible, inclusive
-              products and digital experiences at{" "}
-              <a href="https://upstatement.com/">Upstatement</a> for a variety
-              of clients.
-            </p>
-
-            <p>
-              I also recently{" "}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{" "}
-              that covers everything you need to build a web app with the
-              Spotify API using Node &amp; React.
+              Fast-forward to today, and I’ve had the privilege of working at{' '}
+              <a href="https://www.r-ulybka.ru/">e-commerce retail</a>. My main focus these days is
+              building accessible, inclusive products and digital experiences at{' '}
+              <a href="https://living.ru/">Living</a> for a variety of clients.
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>

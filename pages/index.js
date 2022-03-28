@@ -1,19 +1,21 @@
-import React from "react";
-import Head from "next/head";
-import styled from "styled-components";
-import { Layout } from "../src/components";
-import About from "./about";
-import Contact from "./contact";
-import Projects from "./projects";
-import Featured from "./featured";
-import Jobs from "./jobs";
-import Hero from "./hero";
+import React from 'react';
+import Head from 'next/head';
+import styled from 'styled-components';
+import { Layout } from '../src/components';
+import About from './about';
+import Contact from './contact';
+import Projects from './projects';
+import Featured from './featured';
+import Jobs from './jobs';
+import Hero from './hero';
+import { useRouter } from 'next/router';
 
 const StyledMainContainer = styled.main`
   counter-reset: section;
 `;
 
 export default function Home() {
+  const router = useRouter();
   return (
     <>
       <Head>
@@ -22,21 +24,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Layout
-        location={{
-          hash: "",
-          host: "localhost:8080",
-          hostname: "localhost",
-          href: "http://localhost:8080/",
-          key: "initial",
-          origin: "http://localhost:8080",
-          pathname: "/",
-          port: "8080",
-          protocol: "http:",
-          search: "",
-          state: null,
-        }}
-      >
+      <Layout location={router}>
         <StyledMainContainer className="fillHeight">
           <Hero />
           <About />

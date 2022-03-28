@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
-import styled from "styled-components";
-import { navDelay, loaderDelay } from "../src/utils";
-import { usePrefersReducedMotion } from "../src/hooks";
+import React, { useState, useEffect } from 'react';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import styled from 'styled-components';
+import { navDelay, loaderDelay } from '../src/utils';
+import { usePrefersReducedMotion } from '../src/hooks';
 
 const StyledHeroSection = styled.section`
   ${({ theme }) => theme.mixins.flexCenter};
@@ -63,11 +63,11 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I’m a software engineer specializing in building (and occasionally
-        designing) exceptional digital experiences. Currently, I’m focused on
-        building accessible, human-centered products at{" "}
-        <a href="https://upstatement.com/" target="_blank" rel="noreferrer">
-          Upstatement
+        I’m a software engineer specializing in building (and occasionally designing) exceptional
+        digital experiences. Currently, I’m focused on building accessible, human-centered products
+        at{' '}
+        <a href="https://living.ru/" target="_blank" rel="noreferrer">
+          Living
         </a>
         .
       </p>
